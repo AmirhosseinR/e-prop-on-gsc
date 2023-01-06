@@ -356,8 +356,8 @@ while dataset.current_epoch <= FLAGS.n_iter:
         loss_list.append(epoch_loss)
         accuracy_list.append(epoch_accuracy)
         
-        np.save('result/train_loss_list', loss_list)
-        np.save('result/train_acc_list', accuracy_list)
+        np.save('../result/train_loss_list', loss_list)
+        np.save('../result/train_acc_list', accuracy_list)
         
         epoch_loss = 0.                       # Defines a cost related to an epoch
         epoch_accuracy = 0.
@@ -374,17 +374,17 @@ while dataset.current_epoch <= FLAGS.n_iter:
             best_acc = valid_acc
             print('\n                                ***Best valid accuracy: {:.4g}***\n'.format(best_acc*100))
             print('Saving weights...') 
-            with open('result/w_in.dat', 'w') as outfile:
+            with open('../result/w_in.dat', 'w') as outfile:
                     np.savetxt(outfile, cell_f.w_in, fmt='%-8.8f')
-            with open('result/w_rec.dat', 'w') as outfile:
+            with open('../result/w_rec.dat', 'w') as outfile:
                     np.savetxt(outfile, cell_f.w_rec, fmt='%-8.8f')
-            with open('result/w_out.dat', 'w') as outfile:
+            with open('../result/w_out.dat', 'w') as outfile:
                     np.savetxt(outfile, w_out, fmt='%-8.8f')
             print('--------------------------------') 
         loss, accuracy = compute_result("test")
         print('loss {:.3g} (test),   Accuracy: {:.3g} (test)'.format(loss, accuracy))
-        np.save('result/valid_loss_list', valid_loss_list)
-        np.save('result/valid_acc_list', valid_acc_list)
+        np.save('../result/valid_loss_list', valid_loss_list)
+        np.save('../result/valid_acc_list', valid_acc_list)
         print('--------------------------------') 
  
 

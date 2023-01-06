@@ -4,7 +4,7 @@ This repository contains similar codes which was used by authors of `E-prop on S
 
 The code used in the paper was written and tested on TensorFlow version 1 and then it was modified to TensorFlow version 2.
 
-The repository includes three sub-folders:
+The repository includes five sub-folders:
 
 - preprocess: Use Mel-Frequency Campestral Coefficients (MFCCs) to extract features and save it to files. One should run it ones before training to generate dataset. 
   - We used the codes from `https://github.com/douglas125/SpeechCmdRecognition` repository and modified a few lines to satisfy our requirements.
@@ -15,6 +15,8 @@ The repository includes three sub-folders:
     - we rearrange some part to make it online 
     - implemented it by using 12 cores, added synchronization process and used SpiNNaker 2 timer, comms unit and DMA hardware peripherals.
   - Also the SpiNNaker 2 c code will be made available upon request (It only works on SpiNNaker 2!).
+- files: contains initial weights and preprocessed dataset
+- result: contains the result of tf2 folder
 
 The preprocess dataset (after running codes in the preprocess folder) and initial random weights for c code (after running tf2 folder) should be available in the `files` folder (same hierarchy as c, tf2 and preprocess folders). A compressed `files` folder (files.zip) that contains a small portion of preprocess dataset and also initial random weights are available in the git repository and can be extracted and use for demonstration purpose.
 
