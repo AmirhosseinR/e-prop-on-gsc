@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "type_traits": "c",
+        "cmath": "c",
+        "eprop.h": "c",
+        "tutorial_pattern_generation.h": "c",
+        "models.h": "c",
+        "math_tensorflow.h": "c",
+        "eprop_lsnn.h": "c",
+        "stdlib.h": "c"
+    }
+}
