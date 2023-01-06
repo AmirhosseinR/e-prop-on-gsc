@@ -16,7 +16,7 @@ The repository includes five sub-folders:
     - implemented it by using 12 cores, added synchronization process and used SpiNNaker 2 timer, comms unit and DMA hardware peripherals.
   - Also the SpiNNaker 2 c code will be made available upon request (It only works on SpiNNaker 2!).
 - files: contains initial weights and preprocessed dataset
-- result: contains the result of tf2 folder
+- result: contains the result of tf2 folder (accuracy, loss of different dataset and trained weight for best validation set)
 
 The preprocess dataset (after running codes in the preprocess folder) and initial random weights for c code (after running tf2 folder) should be available in the `files` folder (same hierarchy as c, tf2 and preprocess folders). A compressed `files` folder (files.zip) that contains a small portion of preprocess dataset and also initial random weights are available in the git repository and can be extracted and use for demonstration purpose.
 
