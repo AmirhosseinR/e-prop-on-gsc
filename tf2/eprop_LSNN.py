@@ -15,12 +15,12 @@ FLAGS = flags.FLAGS
 ##
 # flags.DEFINE_string('dataset', '../files_2CH_100TS', 'Path to dataset to use')
 flags.DEFINE_string('dataset', '../files', 'Path to dataset to use') # Also change files/w_'out/in/rec'.dat
-flags.DEFINE_bool('shuffle', False, 'Shuffle the training set after each epoch')
+flags.DEFINE_bool('shuffle', True, 'Shuffle the training set after each epoch')
 flags.DEFINE_bool('wr_init_tofile', True, 'If True, write init values of variables to files, esle read from files')
 flags.DEFINE_bool('do_plot', False, 'interactive plots during training')
 flags.DEFINE_bool('print_shape', False, 'interactive plots during training')
 
-flags.DEFINE_integer('n_batch', 10, 'batch size of the testing set')
+flags.DEFINE_integer('n_batch', 100, 'batch size of the testing set')
 flags.DEFINE_integer('n_out', 12, 'number of output neurons (number of target curves)')
 flags.DEFINE_integer('n_in', 40, 'number of input units')
 flags.DEFINE_integer('n_ch', 2, 'number of input channel')
