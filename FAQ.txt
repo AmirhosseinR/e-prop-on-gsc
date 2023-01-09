@@ -1,0 +1,15 @@
+Q: What version of the Google Speech Commands dataset was used in the paper?
+A: V1, it is available here: https://download.tensorflow.org/data/speech_commands_v0.01.tar.gz
+
+Q: How was the dataset divided into training, validation, and testing datasets?
+A: The testing and validation dataset only follow the text files inside the training data files. 
+   Accuracy on the separate testing data files from Google is less.
+   Other papers just used the text files inside the training data files to split dataset, so we did the same process.
+   The preprocess code was coppied from https://github.com/douglas125/SpeechCmdRecognition repository.
+   
+Q: How are the silence audio clips generated?
+A: Some random clips were generation by using clips in _background_noise_ folder.
+
+Q: Does the SNN take the raw output of MFCC or the log of Mel filter coefficients without DCT? Is there any rescaling or normalization during the preprocessing?
+A: We used the log of Mel filter coefficients without DCT with normalization and rescaling the signal S by dividing max(abs(S))
+   Also during training rescaling the signal S by dividing std of the batch signals.
