@@ -17,6 +17,10 @@ The c simulation can be found in the following folder:
   ```bash
   python3 eprop_LSNN.py
   ```
+- Plot loss and accuracy:
+  ```bash
+  python3 plot_result.py
+  ```
 
 
 ## Result

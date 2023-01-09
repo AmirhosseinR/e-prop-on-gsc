@@ -8,10 +8,10 @@ from numpy import savetxt
 
 # plt.ion()
 
-train_acc_list  = np.load('result/train_acc_list.npy')
-train_loss_list = np.load('result/train_loss_list.npy')
-valid_acc_list = np.load('result/valid_acc_list.npy')
-valid_loss_list = np.load('result/valid_loss_list.npy')
+train_acc_list  = np.load('../result/train_acc_list.npy')
+train_loss_list = np.load('../result/train_loss_list.npy')
+valid_acc_list = np.load('../result/valid_acc_list.npy')
+valid_loss_list = np.load('../result/valid_loss_list.npy')
 
 
 
@@ -40,7 +40,7 @@ ax.grid(which='major', axis='y', linewidth=1)
 
 # ax2.legend()
 ax.set_title('E-PROP + LSNN + MG')
-plt.savefig('result/loss_list_eprop_BI_RNN_LSNN.png', bbox_inches='tight')
+plt.savefig('../result/loss_list_eprop_BI_RNN_LSNN.png', bbox_inches='tight')
 plt.show()  
 
 
