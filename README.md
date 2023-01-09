@@ -8,7 +8,7 @@ The repository includes five sub-folders:
 
 - preprocess: Use Mel-Frequency Campestral Coefficients (MFCCs) to extract features and save it to files. One should run it ones before training to generate dataset. 
   - We used the codes from `https://github.com/douglas125/SpeechCmdRecognition` repository and modified a few lines to satisfy our requirements.
-- tf2: e-prop code in TensorFlow version 2 for training Google Speech Command (GSC) Dataset.
+- tf2: e-prop code in TensorFlow version 2 for training Google Speech Command (GSC) V1 Dataset.
   - We used codes from e-prop official github repository `https://github.com/IGITUGraz/eligibility_propagation` and adopted it to TensorFlow version 2 and GSC.
 - c: c code for e-prop, does not depend on any library and can be run on CPUs, microcontrollers (bare-metal) (some minor changes is needed to feed dataset to microcontrollers in an appropriate way) and ... .
   - The codes used in the paper is based on this folder, but there are two main difference, the code used in the paper:
