@@ -25,7 +25,8 @@ A Rostami, B Vogginger, Y Yexin, C G Mayr
 [Frontiers in Neuroscience](https://www.frontiersin.org/articles/10.3389/fnins.2022.1018006/full), November 2022
 ## Citation
 
-If you find the codes useful, please cite our work:
+If you find the codes useful, please leave a star ⭐ and cite our work:
+
 
 ```
 @ARTICLE{10.3389/fnins.2022.1018006,
