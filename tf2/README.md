@@ -1,4 +1,4 @@
-# E-prop: the code repository
+# E-prop: TensorFlow v2 code repository
 
 Here is the tensorflow simulation for GSC: `eprop_LSNN.py`
 
@@ -8,18 +8,20 @@ The c simulation can be found in the following folder:
 
 
 
-# Run eprop_LSNN.py
+## Run eprop_LSNN.py
 
-Install CONDA.  Conda cheat sheet can be found: https://docs.conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf
+- The requirements packages are available in requirements.txt file.
+- Make sure there is no space, dash (-) or special character (#, @, ...) in the python file path (otherwise you get python library error).
+- The default code use e-prop with hard code (do not use TensorFlow auto-diff).
+- Run the code:
+  ```bash
+  python3 eprop_LSNN.py
+  ```
 
-The conda config file is in `eprop-GSC.yml`, this is the package version in my PC. Just pay attention to main library version like: python, tensorflow, librosa, scipy, pyaudio.
 
-- Make sure there is no space, dash (-) or special character (#, @, ...) in the file path (otherwise you get python library error).
+## Result
 
-
-# Result
-
-The result for TensorFlow v2.4.1 and CUDA v11.1.1 on NVIDIA GA100 [A100 SXM4 40GB]:
+The result for TensorFlow v2.7.1 on NVIDIA A100-SXM4 GPU, it takes about 3 hours to complete:
 
 It takes about 3H for each run.
 
