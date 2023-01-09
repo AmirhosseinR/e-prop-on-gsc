@@ -1,26 +1,12 @@
 import pyaudio 
 import random
 import os
-import tensorflow as tf
-from tensorflow.python.client import device_lib
-print(device_lib.list_local_devices())
-
 import librosa
-import matplotlib
 import numpy as np
-
-# save numpy array as csv file
-from numpy import asarray
-from numpy import savetxt
-
 import matplotlib.pyplot as plt
-# %matplotlib inline
-
 import SpeechDownloader
 import SpeechGenerator
-
 import scipy.fftpack
-
 from tqdm import tqdm
 
 
@@ -43,7 +29,7 @@ hop_length = int(10e-3*sr) + 1
 n_mels = 40
 fmax = 4000
 fmin = 20
-delta_order = 1 #2 #None
+delta_order = 2
 stack = True
 
 
