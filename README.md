@@ -1,6 +1,6 @@
 This is a copy of [https://gitlab.com/tud-hpsn/public/e-prop-on-gsc](https://gitlab.com/tud-hpsn/public/e-prop-on-gsc) repository.
 
-# e-prop on GSC
+# e-prop on SpiNNaker 2
 
 This repository contains similar codes which was used by authors of `E-prop on SpiNNaker 2: Exploring online learning in spiking RNNs on neuromorphic hardware` paper [1].
 
